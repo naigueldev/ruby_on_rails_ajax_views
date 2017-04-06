@@ -1,0 +1,25 @@
+<div id="show_noticia" class="">
+
+
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Titulo:</strong>
+    <%= @noticia.titulo %>
+  </p>
+
+  <p>
+    <strong>Data:</strong>
+    <%= @noticia.data %>
+  </p>
+
+  <p>
+    <strong>Texto:</strong>
+    <%= @noticia.texto %>
+  </p>
+
+  <%= link_to 'Edit', edit_noticia_path(@noticia) %> |
+  <%# link_to 'Back', noticias_path %>
+
+
+</div>

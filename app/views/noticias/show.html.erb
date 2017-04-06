@@ -1,0 +1,9 @@
+<%= render "noticias/show" %>
+
+<div style="text-align: center;">
+
+  <%= link_to("Notícia Anterior", @noticia.previous_noticia, :style=>"padding: 10px 10px;") if @noticia.previous_noticia %>
+  <%= link_to("Próxima Notícia", @noticia.next_noticia, :style=>"padding: 10px 10px;" ) if @noticia.next_noticia%>
+
+
+</div>
